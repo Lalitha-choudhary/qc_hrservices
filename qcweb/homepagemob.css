@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*{
+    margin: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (min-width:320px) and (max-width:720px){
+    .navbar{
+        width: 100%;
+        height: 75px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar > .logo > img{
+        width: 100px;
+        height: 75px;
+        margin-left: 15px;
+    }
+    .navbar > .fa-bars{
+        display: block;
+        font-size: 2.5rem;
+        margin-right: 30px;
+        color: rgb(68, 68, 68);
+    }
+    .navbar > .navlink{
+       display: none;
+    }
+    .navbarlink{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(150deg, rgba(56, 56, 56, 0.993), rgb(155, 155, 155));
+        display: none;
+        z-index: 999;
+    }
+    .navbarlink > .fa-times-circle{
+        position: relative;
+        font-size: 2.5rem;
+        float: right;
+        margin-right: 30px;
+        top: 3%;
+        color: rgb(212, 212, 212);
+    }
+    .navbarlink > .logotxt{
+      text-align: center;
+      color: whitesmoke;
+      margin: 50px 0px;
+    }
+    .navbarlink > .navlist{
+       text-align: center;
+       margin: 40px 0px;
+    }
+    .navbarlink > .navlist > a{
+        text-decoration: none;
+        font-size: 2rem;
+        color: whitesmoke;
+    }
+    .navbarlink > .navlist > a:hover{
+        text-decoration: underline;
+    }
+    .slider {
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .slide {
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .slide.active {
+        transform: translateX(-100%);
+    }
+    
+    .slide .info {
+        background-color: rgba(255, 255, 255, 0.7);
+        color: #333;
+        padding: 20px 5px;
+        position: absolute;
+        opacity: 0.1;
+        top: 40%;
+        left: 0%;
+        text-align: left;
+        width: 300px;
+        max-width: 100%;
+    }
+    
+    .slide.active .info{
+        opacity: 1;
+        transform: translateY(-40px);
+        transition: all 0.5s ease-in-out 0.8s;
+    }
+    
+    .slide .info h1 {
+        font-size: 1.8rem;
+        margin: 10px 0;
+        color: gray;
+    }
+    
+    .slide .info p {
+        letter-spacing: 1px;
+        color: rgba(128, 128, 128, 0.842);
+    }
+    
+    .eraser {
+        background: #a5a5a5b9;
+        position: absolute;
+        transition: transform 0.5s ease-in-out;
+      opacity: 0.95;
+        top: 0;
+        left: 100%;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .eraser.active {
+        transform: translateX(-100%);
+    }
+
+
+    
+/* ----------------------------------------------------services------------------------------------------------------------------------------- */
+.servicesec{
+    background-color: ghostwhite;
+    width: 100%;
+    height: auto;
+}
+.servicecontent{
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+.servicecontent > h3{
+    font-size: 2.2rem;
+    text-align: center;
+    margin:60px 0px;
+    color: rgb(81, 81, 129);
+}
+.servicecontent > h6{
+    font-size: 1.5rem;
+    text-align: center;
+    margin:20px 0px ;
+    color: rgb(87, 87, 87);
+}
+.servicecontent > p{
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    margin: 30px 5px;
+    color: rgb(150, 150, 150);
+}
+.servicecontent > h4{
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(128, 128, 128);
+    margin: 75px 0px;
+}
+.servicecontent > .ourservice{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    margin: 20px 0px 0px 0px;
+}
+.ourservice > .serviceicon{
+width: 90%;
+height: auto;
+margin: 10px 17px;
+border-radius: 10px;
+text-align: center;
+}
+.serviceicon > img{
+    width: 100px;
+    height: 100px;
+    margin: 40px 0px;
+}
+.serviceicon > h6{
+    font-size: 1.3rem;
+    color: rgba(88, 88, 88, 0.801);
+    margin: 20px 0px;
+}
+
+
+/* ------------------------------------------------------------------------abtsec-------------------------------------------------------------------------- */
+
+.aboutsec{
+    background: ghostwhite;
+    width: 100%;
+    height: auto;
+}
+.aboutcontent{
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+.aboutcontent > h3{
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px 0px;
+    color: rgb(81, 81, 129);
+}
+.aboutcontent > .abouttext{
+    width: 100%;
+    height: 150vh;
+    background-repeat: no-repeat, repeat;
+    background-color: rgba(211, 211, 211, 0.63);
+    background-image: url("images/aimgbg1.jpeg");
+    background-blend-mode: lighten;
+}
+.abouttext > .aboutus_content{
+    width: 100%;
+    height: auto;
+    float: right;
+    background-color: rgba(245, 245, 245, 0.637);
+}
+.aboutus_content > h5{
+    font-size: 1.3rem;
+    margin: 30px 10px;
+    color: rgb(128, 128, 128);
+}
+.aboutus_content > p{
+    font-size: 0.9rem;
+    letter-spacing: 1.2px;
+    text-align: justify;
+    margin: 25px 5px;
+    color: rgb(150, 150, 150);
+}
+.aboutus_content > h6{
+    font-size: 2rem;
+    color: rgba(141, 141, 141, 0.774);
+    margin: 10px 30px;
+}
+/* --------------------------------------------------------------why us-------------------------------------------------------------------------------- */
+.whyus_content{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+.whyus_content > h3{
+    font-size: 2rem;
+    text-align: center;
+    margin:20px 0px;
+    color: rgb(81, 81, 129);
+}
+.wrapper {
+	max-width: 50rem;
+	width: 100%;
+    height: 45vh;
+	margin: 0 auto;
+  }
+  .slider_1 {
+	background: #fff;
+	position: relative;
+    height: 100%;
+	margin: 2rem 0;
+	overflow: hidden;
+	padding-bottom: 2.5rem;
+	border: 0.25rem solid #95a5a68a;
+  }
+  .slider_1::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	content: '';
+	display: block;
+	background: #5a5a5a;
+	height: 3rem;
+  }
+  .slide-switch {
+	display: none;
+  }
+  .slide-label {
+	position: absolute;
+	bottom: 1rem;
+	display: block;
+	z-index: 5;
+	height: 1rem;
+	width: 1rem;
+	text-indent: 1rem;
+	overflow: hidden;
+	background: #aaaaaa;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.25s;
+  }
+  .slide-label:nth-of-type(1) {
+	left: 1rem;
+  }
+  .slide-label:nth-of-type(2) {
+	left: 2.5rem;
+  }
+  .slide-label:nth-of-type(3) {
+	left: 4rem;
+  }
+  .slide-label:nth-of-type(4) {
+	left: 5.5rem;
+  }
+  .slide-label:nth-of-type(5) {
+	left: 7rem;
+  }
+  .padded {
+	padding: 1rem 2rem;
+  }
+  .slide-content {
+	width: 100%;
+	background: #fff;
+	float: left;
+	margin-right: -100%;
+  }
+  .slide-content >h1{
+      font-size: 1.2rem;
+      text-align: center;
+      color: rgba(88, 88, 88, 0.801);
+      margin: 5px 0px;
+  }
+  .slide-content > p{
+      font-size: 0.9rem;
+      color: rgb(151, 149, 149);
+      margin: 10px 5px;
+  }
+  .slide-switch:checked + .slide-label {
+	background: #e0e0e0;
+  }
+  .slide-switch:not(:checked) + .slide-label + .slide-content {
+	opacity: 0;
+	transition: opacity 0.35s;
+	pointer-events: none;
+  }
+  .slide-switch:checked + .slide-label + .slide-content {
+	animation: slide 1s;
+  }
+  @keyframes slide {
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+  /* -----------------------------------------------------------------contact------------------------------------------------------------------------------ */
+  .contactsec{
+    background: rgb(129, 129, 129);
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+.footer{
+    text-align: center;
+}
+.footer > .footerlogo > img{
+    width: 300px;
+    height: 150px;
+    margin: 20px 0px;
+}
+.footer > .footerlogo >  h6{
+    font-size: 1.2rem;
+    color: silver;
+    margin: 20px 0px;
+}
+.footer > .footer_link{
+    height: fit-content;
+}
+.footer_link > h5{
+font-size: 2rem;
+color: silver;
+margin: 20px 0px;
+}
+.footer_link > .footerlist{
+font-size: 1.2rem;
+color: silver;
+margin: 20px 0px;
+}
+.footer_link > .footerlist > a{
+    text-decoration: none;
+    color: silver;
+}
+.footer > .contactcontent{
+    height: fit-content;
+    margin: 20px 0px;
+}
+.contactcontent > h5{
+    font-size: 2rem;
+    color: silver;
+}
+.contactcontentt > .address{
+    display: flex;
+    margin: 10px 0px;
+    }
+    .address > .fa-map-marker{
+    font-size: 1.5rem;
+    color: silver;
+    }
+    .address > a{
+    text-decoration: none;
+    color: silver;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    }
+    .address > a:hover{
+        text-decoration: underline;
+        color:  rgb(243, 243, 243);
+    }
+    .contactcontent > .call{
+        display: flex;
+        margin: 15px 20px;
+        text-align: center;
+    }
+    .call > .fa-phone-square{
+        font-size: 1.5rem;
+        color: silver;
+    }
+    .call > a{
+        text-decoration: none;
+        color: silver;
+        font-size: 1.2rem;
+        margin-left:  10px;
+    }
+    .call > a:hover{
+        text-decoration: underline;
+        color: rgb(243, 243, 243);
+    }
+    .contactcontent > .mail{
+        display: flex;
+        margin: 15px 15px;
+    }
+    .mail > .fa-envelope{
+        font-size: 1.5rem;
+        color: silver;
+    }
+    .mail > a{
+        text-decoration: none;
+    color: silver;
+    font-size: 1.2rem;
+    margin-left:10px;
+    }
+    .mail > a:hover{
+        text-decoration: underline;
+        color:  rgb(243, 243, 243);
+    }
+    .contactcontent > .insta >  a > .fa-instagram{
+    font-size: 1.8rem;
+    color: crimson;
+    } 
+    .contactcontent > .insta >  a > .fa-linkedin-square{
+    font-size: 1.8rem;
+    color: blue;
+    } 
+    .contactcontent > .insta >  a > .fa-youtube-play{
+    font-size: 1.8rem;
+    color: red;
+    margin: 0px 10px;
+    }
+    .footer > .iframe{
+        margin: 20px 0px;
+    }
+    .copyright{
+        text-align: center;
+        color: silver;
+    }
+    .copyright > p > .fa-copyright{
+        color: silver;
+    }
+}

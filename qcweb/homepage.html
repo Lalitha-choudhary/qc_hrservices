@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qc</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="homepagetab.css">
+    <link rel="stylesheet" href="homepagemob.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/Logo.png" alt="">
+        </div>
+        <ul class="navlink">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa fa-bars" aria-hidden="true" onclick="opennavlink()"></i>
+    </div>
+    <div class="navbarlink" id="navigation">
+        <i class="fa fa-times-circle" aria-hidden="true" onclick="closenavlink()"></i>
+        <div class="logotxt">
+            <h1>QC</h1>
+            <h4>HR SERVICES</h4>
+        </div>
+        <div class="navlist"><a href="homepage.html">Home</a></div>
+        <div class="navlist"><a href="#services">Services</a></div>
+        <div class="navlist"><a href="#aboutus">About Us</a></div>
+        <div class="navlist"><a href="#contact">Contact</a></div>
+    </div>
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slide active" style="background-image: url('images/mainbgimg1.jpg');">
+                    <div class="info">
+                        <h1>We care about Your Business</h1>
+                        <p>Consultancy that provides connected thinking</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/mainbgimg2.jpg');">
+                    <div class="info">
+                        <h1>we care about prospective Candidates.</h1>
+                        <p>Candidates build your dreams and firms.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="eraser"></div>
+            <div class="buttons-container">
+                <button id="previous"><i class="fas fa-chevron-left"></i></i></button>
+                <button id="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    <section id="services" class="servicesec">   
+        <div class="servicecontent">
+            <h3>Services We Provide</h3>
+            <h6>Greetings from QC HR SERVIVCES!</h6>
+            <p>We take immense pleasure in introducing ourself as an HR consulting firm providing exceptional services on recruitment front. 
+                We see ourselves as a company progressing towards the top notch in the very near future through our absolute professionalism. Our major strength lies in ensuring that our clients get the right candidate at the right time, commensurate with given profiles in terms of technical skills, qualifications, relevant experience and communication skills. 
+                Our team of hard core professionals ensures absolute client satisfaction through their seasoned screening abilities.</p>
+            
+            <h4>Our services include:</h4>
+            <div class="ourservice">
+                <div class="serviceicon">
+                    <img src="images/sericon1.svg" alt="">
+                    <h6>Entry level mostly for BPO companies</h6>
+                </div>
+                <div class="serviceicon">
+                    <img src="images/servicesimg2.png" alt="">
+                    <h6>Middle Management</h6>
+                </div>
+
+                <div class="serviceicon">
+                    <img src="images/sericon3.svg" alt="">
+                    <h6>Lateral
+                        Hiring</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="aboutus" class="aboutsec">
+        <div class="aboutcontent">
+            <h3>About Us</h3>
+            <div class="abouttext">
+                <div class="aboutus_content">
+                    <h5>QC HR SERVICES Leadership team has a proven track record of Talent Acquisition</h5>
+                    <p>We have been in touch and executing talent acquisition process with several IT Services companies, which are well established brands. Our Recruitment Consultants have significant domain expertise to conduct market research, identify the list of prospective candidates, validate the resume, position your organization and job, recruit and on-board the right talent as per your business goals.<br><br>
+                        We also have an exclusive Databank of prospective candidates across skill-sets, levels, verticals, domains and geographies which is built and updated through continuous market research, network and references. Therefore, we can provide you the right choice of candidates within a short span of time and ensure quick on-boarding of required resources.<br><br>
+                        We are passionately devoted to your success and look forward to partner with you to identify, attract and recruit competent Leadership and Technical Workforce. We will dedicate a Recruitment Partner (Lead) and team to support your recruitment plan and process whenever required.
+                    </p>
+                    <h6>Amos Raj</h6>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <div class="whyus_content">
+        <h3>Why US</h3>
+        <div class="wrapper">
+
+            <div class="slider_1">
+          
+              <input type="radio" name="slide-switches" id="slide_text" checked class="slide-switch">
+              <label for="slide_text" class="slide-label"></label>
+              <div class="slide-content padded">
+                <h1>Quick</h1>
+                <p>We understand your business needs and meet the requirements quickly.
+                     The secret of speed in this business is people networking and we are constantly networking so you don't have to wait.</p>
+                
+              </div>
+          
+              <input type="radio" name="slide-switches" id="slide_image" class="slide-switch">
+              <label for="slide_image" class="slide-label"></label>
+              <div class="slide-content">
+                <h1>Support Volume Hiring</h1>
+                <p>We have the database, resource and network in supporting volume hiring. 
+                    We believe in delivering right people at the right time and hence our services link with extensive search to support volume hiring.</p>
+              </div>
+          
+              <input type="radio" name="slide-switches" id="slide_video" class="slide-switch">
+              <label for="slide_video" class="slide-label"></label>
+              <div class="slide-content">
+                <h1>Focused</h1>
+                <p>We believe in supporting our clients strategy in hiring talents at the right time, so our team will work exclusively for you.
+                     We will have dedicated team to help you achieve your recruitment strategy.</p>
+              </div>
+          
+            </div>
+          
+          </div>
+    </div>
+    <section id="contact" class="contactsec">
+        <footer class="footer">
+            <div class="footerlogo">
+                <img src="images/Logo.png" alt="">
+                <h6>opening hours</h6>
+                <h6>Mon-Sat: 9:30am-6:00pm</h6>
+            </div>
+            <div class="footer_link">
+                <h5>Links</h5>
+                <div class="footerlist"><a href="homepage.html">Home</a></div>
+                <div class="footerlist"><a href="#services">Services</a></div>
+                <div class="footerlist"><a href="#aboutus">About Us</a></div>
+                <div class="footerlist"><a href="#contact">Contact</a></div>
+            </div>
+            <div class="contactcontent">
+                <h5>contact us</h5>
+                <div class="address">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <a href="
+                    https://goo.gl/maps/ZAHn5KEwfFfpiW1o9
+                    ">behind Karnataka bank road,<br> &nbsp; &nbsp; &nbsp;Hurulichikanahalli, Bengaluru, <br> &nbsp; &nbsp; &nbsp;Karnataka 560088</a>
+                </div>
+                <div class="call">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <a href="tel:+91 6364906664">+91  6364906664</a>
+                </div>
+                <div class="mail">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:qchrservices21@gmail.com">qchrservices21@gmail.com</a>
+                </div>
+                <div class="insta">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/company/qc-hr-services/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.7139844522603!2d77.48025051482351!3d13.117296890760379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae231117b5880d%3A0xfc06c2f9c7c78e8f!2sQC%20HR%20SERVICES!5e0!3m2!1sen!2sin!4v1619087889639!5m2!1sen!2sin" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="copyright">
+                <p><span><i class="fa fa-copyright" aria-hidden="true"></i></span>2021-QC HR SERVICES, All rights reserved</p>
+            </div>
+        </div>
+    </section>
+<script src="home.js"></script>      
+</body>
+</html>
